@@ -1,33 +1,30 @@
-//ercondewuacharo
-
 module.exports = [
     {
-      id: 1, 
-      cantidad: 2
+        id: 1,
+        quantity: 10
     },
     {
-      id: 2,
-      cantidad: 22323
+        id: 2,
+        quantity: 80
     },
     {
-      id: 3,
-      cantidad: 34325
+        id: 3,
+        quantity: 34
     },
     {
-      id: 4,
-      cantidad: 22
-    },  
-    {
-      id: 5,
-      cantidad: 11
+        id: 4,
+        quantity: 5
     },
     {
-      id: 6,
-      cantidad: 12323
-    },  
-    {
-      id: 7,
-      cantidad: 234
+        id: 5,
+        quantity: 45
     },
-  ]
- 
+    {
+        id: 6,
+        quantity: 12
+    },
+    {
+        id: 7,
+        quantity: 8
+    },
+]

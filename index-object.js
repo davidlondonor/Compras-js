@@ -1,11 +1,8 @@
 const products = require("./products");
-const list = require("./shopping-list");
+const list = require("./quantity");
 
-console.log(list);
+products.forEach(item => console.log('products', item))
+products.forEach(item => console.log('list', item))
 
-console.log(products.price);
+console.log('punto 1:', products);
 
-products.forEach(item => console.log("products"item.name));
-shopping-list.forEach(item => console.log("products"list.name));
-
-//hola mundo
