@@ -1,5 +1,7 @@
-const products = require("./products");
-const quantity = require("./quantity");
+// const products = require("./products");
+// const list = require("./shopping-list");
+
+const productsList = require("./product-list");
 const clients = require("./clients");
 const costs = require("./costs");
 
@@ -47,12 +49,12 @@ const productsQuantities = [
 // Funciones adicionales aquí...
 
 // TODO: Función Principal getCostList
-function getCostList(client, productsIds, quantities) {
+function getCostList(client, productlist) {
   console.log(productsIds, quantities);
   var total = 0;
-  productsIds.forEach((element, index) => {
+  productsList.forEach((item) => {
     var subtotal;
-    var inventario = quantity[element];
+    var inventario = products.find(productsItem => productsItem.id === item.id);
     var pedidousuario = quantities[index];
     if (inventario >= pedidousuario) {
       subtotal = pedidousuario * costs[element];
@@ -75,6 +77,7 @@ function getCostList(client, productsIds, quantities) {
     total = total;
   }
   console.log(total.toFixed(2));
+  return total.toFixed(2);
 }
 
 const result = getCostList(clients[0], productsListIds, productsQuantities);
